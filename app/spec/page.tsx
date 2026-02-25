@@ -1,6 +1,6 @@
 import React from "react";
-import MyCard from "@/components/MyCard";
-import SideMenu from "@/components/SideMenu";
+import MyCard from "@/components/mycard";
+import SideMenu from "@/components/sidemenu";
 import { Code2, Globe, PenTool } from "lucide-react";
 
 export default function spec() {
