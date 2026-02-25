@@ -1,51 +1,43 @@
-import React from 'react'
-import MyCard from '@/components/MyCard'
-import SideMenu from '@/components/SideMenu'
+import React from "react";
+import MyCard from "@/components/MyCard";
+import SideMenu from "@/components/SideMenu";
 
-export default function aboutme() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#121212] flex items-center justify-center p-6 font-sans">
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-        
-        {/* ฝั่งซ้าย: Profile Card */}
-        <div className="shrink-0">
+    <main className="min-h-screen bg-[#121212] flex items-center justify-center p-4 font-sans overflow-hidden">
+      <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
+        {/* ฝั่งซ้าย: Profile Card - ใช้ scale เพื่อลดขนาดลง 5-10% */}
+        <div className="shrink-0 transform scale-95 origin-center">
           <MyCard />
         </div>
 
         {/* ฝั่งขวา: Content Section */}
-        <div className="flex-1 text-white text-center md:text-left">
-          <h2 className="text-2xl md:text-3xl font-medium mb-4">
-            Lets Work <span className="text-orange-500">Together !</span>
+        <div className="flex-1 text-white text-center md:text-left py-4">
+          {/* ลดขนาดหัวข้อรอง */}
+          <h2 className="text-xl md:text-2xl font-medium mb-4 tracking-[0.1em]">
+            About <span className="text-orange-500">Me</span>
           </h2>
-          
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Hi From <span className="text-orange-500">Saranchai</span> ,<br />
-            Interactive Designer & Fullstack Web Developer
+
+          <h1 className="text-lg md:text-[48px] font-bold leading-none tracking-[0.05em] mb-5 text-white">
+            I find fulfillment in blending visual design with the power of
+            coding to create meaningful experiences.
           </h1>
 
-          <p className="text-gray-400 text-lg max-w-2xl mb-10 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime 
-            tempora at neque a adipisci nulla voluptatem? Mollitia, officiis, architecto 
-            earum voluptates obcaecati corrupti voluptatem.
+          <p className="text-gray-400 text-base md:text-lg max-w-xl mb-8 leading-relaxed font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            maxime tempora at neque a adipisci nulla voluptatem? Mollitia,
+            officiis, architecto earum voluptates obcaecati corrupti voluptatem
+            . Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            maxime tempora at neque a adipisci nulla voluptatem? Mollitia,
+            officiis, architecto earum voluptates obcaecati corrupti voluptatem
+            .
           </p>
 
-          {/* Stats Section */}
-          <div className="flex flex-row justify-center md:justify-start gap-12">
-            <div>
-              <h3 className="text-orange-500 text-5xl font-bold mb-2">3+</h3>
-              <p className="text-gray-400 uppercase tracking-widest text-sm">Years of<br/>Experience</p>
-            </div>
-            <div>
-              <h3 className="text-orange-500 text-5xl font-bold mb-2">10+</h3>
-              <p className="text-gray-400 uppercase tracking-widest text-sm">Projects<br/>Completed</p>
-            </div>
-          </div>
         </div>
 
-        {/* Sidebar Navigation (Optional - ด้านขวาสุดตามรูป) */}
-        <SideMenu />
-
+        {/* Sidebar Navigation - ส่ง activeTab="aboutme" เพื่อให้ไอคอนแรกสีส้ม */}
+        <SideMenu activeTab="aboutme" />
       </div>
     </main>
-  )
+  );
 }
