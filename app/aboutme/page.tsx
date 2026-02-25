@@ -1,6 +1,6 @@
 import React from "react";
-import MyCard from "../../components/MyCard";
-import SideMenu from "../../components/SideMenu";
+import MyCard from "@/components/MyCard";
+import SideMenu from "@/components/SideMenu";
 
 export default function AboutMePage() {
   return (
