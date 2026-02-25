@@ -48,7 +48,6 @@ export default function MyCard() {
         {/* Action Button - font-normal ตามที่ต้องการ และลดความสูงปุ่ม */}
         <button className="w-full bg-[#ff5a00] text-black py-3 rounded-xl hover:bg-orange-600 transition-all active:scale-95 text-xl font-normal uppercase shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2">
           HIRE ME !
-          <IoSend className="text-lg" />
         </button>
       </div>
     </div>
