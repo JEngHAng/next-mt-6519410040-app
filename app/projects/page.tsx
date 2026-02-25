@@ -1,7 +1,7 @@
 import React from "react";
-import MyCard from "@/components/MyCard";
-import SideMenu from "@/components/SideMenu";
-import Image from "@/assets/images/Calculator Varity.png";
+import MyCard from "../../components/MyCard";
+import SideMenu from "../../components/SideMenu";
+import Image from "../../assets/images/Calculator Varity.png";
 
 export default function projects() {
   return (
